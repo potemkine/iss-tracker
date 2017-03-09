@@ -26,5 +26,5 @@ if dict:
     datedata = datetime.datetime.fromtimestamp(int(dict['timestamp'])).strftime('%H:%M:%S-%d-%m-%Y')
 
     f = open("img/" + datedata + '.png','wb')
-    f.write(urlopen("https://maps.googleapis.com/maps/api/staticmap?center=" + str_loca + "&zoom=3&size=640x640&maptype=satellite&markers=color:red|" + str_loca + "&key=AIzaSyCplk-b4aNxj3uK2kTv3dEP4DkbRoV_ZRM").read())
+    f.write(urlopen("https://maps.googleapis.com/maps/api/staticmap?center=" + str_loca + "&zoom=2&size=640x640&maptype=satellite&markers=color:red|" + str_loca + "&key=AIzaSyCplk-b4aNxj3uK2kTv3dEP4DkbRoV_ZRM").read())
     f.close()
